@@ -48,5 +48,5 @@ jobs:
     steps:
     - run: curl https://raw.githubusercontent.com/nobrakal/benchAlgaPr/master/compare.sh -o ./compare.sh; chmod +x compare.sh
       shell: bash
-    - run: ./compare.sh Cabal ./ QuickComparison "HEAD"
+    - run: ./compare.sh /opt/ghc/bin/cabal ./ QuickComparison "HEAD"
       shell: bash
