@@ -46,12 +46,4 @@ jobs:
   benchmark:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: haskell/actions/setup@v2
-        id: setup-haskell
-        with:
-          ghc-version: 9.2.3
-      - name: Run the script
-        run: |
-          echo "Hello?"
-        shell: bash
+      run: curl https://raw.githubusercontent.com/nobrakal/benchAlgaPr/master/compare.sh -o ./compare.sh; chmod +x compare.sh
