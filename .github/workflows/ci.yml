@@ -43,15 +43,15 @@ jobs:
         github-user: snowleopard
         hlint-arguments: src
 
-    test:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2
-        - uses: haskell/actions/setup@v2
-          id: setup-haskell
-          with:
-            ghc-version: 9.2.3
-        - name: Run the script
-          run: |
-            echo "Hello?"
-          shell: bash
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: haskell/actions/setup@v2
+        id: setup-haskell
+        with:
+          ghc-version: 9.2.3
+      - name: Run the script
+        run: |
+          echo "Hello?"
+        shell: bash
