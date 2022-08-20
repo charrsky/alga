@@ -46,7 +46,7 @@ jobs:
   benchmark:
     runs-on: ubuntu-latest
     steps:
-    - run: curl https://raw.githubusercontent.com/nobrakal/benchAlgaPr/master/compare.sh -o ./compare.sh; chmod +x compare.sh
+    - run: curl https://raw.githubusercontent.com/charrsky/benchAlgaPr/master/compare.sh -o ./compare.sh; chmod +x compare.sh
       shell: bash
     - run: ./compare.sh Stack ./ QuickComparison "HEAD"
       shell: bash
